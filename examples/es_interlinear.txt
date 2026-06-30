@@ -1,0 +1,59 @@
+IPA:   el ɡato kome
+GLOSS: the cat eat.3SG
+TRANS: The cat eats
+
+IPA:   los ɡato-s kome-n
+GLOSS: the cat-PL eat-3PL
+TRANS: The cats eat
+
+IPA:   la muxeɾ βe el peɾo
+GLOSS: the woman see.3SG the dog
+TRANS: The woman sees the dog
+
+IPA:   el niɲo beβe letʃe
+GLOSS: the child drink.3SG milk
+TRANS: The child drinks milk
+
+IPA:   los niɲo-s beβe-n aɣwa
+GLOSS: the child-PL drink-3PL water
+TRANS: The children drink water
+
+IPA:   ʝo komo pan
+GLOSS: 1SG eat.1SG bread
+TRANS: I eat bread
+
+IPA:   las mano-s son ɡɾande-s
+GLOSS: the hand-PL be.3PL big-PL
+TRANS: The hands are big
+
+IPA:   los paxaɾo-s βuela-n
+GLOSS: the bird-PL fly-3PL
+TRANS: The birds fly
+
+IPA:   el sol es ɡɾande
+GLOSS: the sun be.3SG big
+TRANS: The sun is big
+
+IPA:   ʝo βeo la luna
+GLOSS: 1SG see.1SG the moon
+TRANS: I see the moon
+
+IPA:   el niɲo kome un peθ
+GLOSS: the child eat.3SG a fish
+TRANS: The child eats a fish
+
+IPA:   la muxeɾ tiene dos mano-s
+GLOSS: the woman have.3SG two hand-PL
+TRANS: The woman has two hands
+
+IPA:   los ombɾe-s βen las esteʎa-s
+GLOSS: the man-PL see.3PL the star-PL
+TRANS: The men see the stars
+
+IPA:   ʝo tenɡo dos oxo-s
+GLOSS: 1SG have.1SG two eye-PL
+TRANS: I have two eyes
+
+IPA:   el peɾo es βjexo
+GLOSS: the dog be.3SG old
+TRANS: The dog is old

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lingcompare"
+version = "0.1.0"
+description = "Interactive tool for comparing linguistic corpora across phonology, lexicon, and grammar"
+requires-python = ">=3.10"
+dependencies = [
+    "panphon>=0.20",
+    "rapidfuzz>=3.0",
+    "streamlit>=1.30",
+    "pandas>=2.0",
+    "openpyxl>=3.1",
+    "python-docx>=1.0",
+]
+
+[project.scripts]
+lingcompare = "lingcompare.app.Home:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["lingcompare"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

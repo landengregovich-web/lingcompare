@@ -1,0 +1,6 @@
+panphon>=0.20
+rapidfuzz>=3.0
+streamlit>=1.30
+pandas>=2.0
+openpyxl>=3.1
+python-docx>=1.0

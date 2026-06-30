@@ -1,0 +1,11 @@
+IPA:   aɡwa-s
+GLOSS: water-PLUR
+TRANS: waters
+
+IPA:   a aɡwa
+GLOSS: the water
+TRANS: the water
+
+IPA:   mɐ̃w-s pɛʃɨ-s
+GLOSS: hand-PLUR fish-PLUR
+TRANS: hands and fish

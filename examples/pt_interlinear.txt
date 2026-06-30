@@ -1,0 +1,59 @@
+IPA:   u ɡatu kome
+GLOSS: the cat eat.3SG
+TRANS: The cat eats
+
+IPA:   us ɡatu-s kome-m
+GLOSS: the cat-PL eat-3PL
+TRANS: The cats eat
+
+IPA:   a muʎeɾ ve u kaw
+GLOSS: the woman see.3SG the dog
+TRANS: The woman sees the dog
+
+IPA:   u meniɲu bebe lejte
+GLOSS: the child drink.3SG milk
+TRANS: The child drinks milk
+
+IPA:   us meniɲu-s bebe-m aɡwa
+GLOSS: the child-PL drink-3PL water
+TRANS: The children drink water
+
+IPA:   ew komu paw
+GLOSS: 1SG eat.1SG bread
+TRANS: I eat bread
+
+IPA:   as maw-s sɐw ɡɾande-s
+GLOSS: the hand-PL be.3PL big-PL
+TRANS: The hands are big
+
+IPA:   us pasaɾu-s voam
+GLOSS: the bird-PL fly.3PL
+TRANS: The birds fly
+
+IPA:   u sol e ɡɾande
+GLOSS: the sun be.3SG big
+TRANS: The sun is big
+
+IPA:   ew veju a lua
+GLOSS: 1SG see.1SG the moon
+TRANS: I see the moon
+
+IPA:   u meniɲu kome um pejʃe
+GLOSS: the child eat.3SG a fish
+TRANS: The child eats a fish
+
+IPA:   a muʎeɾ tem duas maw-s
+GLOSS: the woman have.3SG two hand-PL
+TRANS: The woman has two hands
+
+IPA:   us ome-s vejɐw as esteʎa-s
+GLOSS: the man-PL see.3PL the star-PL
+TRANS: The men see the stars
+
+IPA:   ew tenɲu dus oʎu-s
+GLOSS: 1SG have.1SG two eye-PL
+TRANS: I have two eyes
+
+IPA:   u kaw e veʎu
+GLOSS: the dog be.3SG old
+TRANS: The dog is old
