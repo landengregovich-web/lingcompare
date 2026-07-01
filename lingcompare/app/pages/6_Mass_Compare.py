@@ -74,7 +74,8 @@ def _colour(val):
     r = 255 - g
     return f"background-color: rgb({r},{g},80); color: black"
 
-styled = sim_df.style.applymap(_colour)
+_styler = sim_df.style.map if hasattr(sim_df.style, "map") else sim_df.style.applymap
+styled = _styler(_colour)
 st.dataframe(styled, use_container_width=True)
 
 # ---------------------------------------------------------------------------
@@ -170,7 +171,7 @@ if rows:
     def _hl_empty(val):
         return "color: #aaa" if val == "" else ""
     st.dataframe(
-        concept_df.style.applymap(_hl_empty, subset=names),
+        (concept_df.style.map if hasattr(concept_df.style, "map") else concept_df.style.applymap)(_hl_empty, subset=names),
         use_container_width=True,
         hide_index=True,
     )
