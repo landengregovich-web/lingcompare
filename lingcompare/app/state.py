@@ -9,12 +9,19 @@ import streamlit as st
 
 
 INITIAL_STATE: dict = {
+    # Single-pair (legacy, used by Phonology / Lexicon / Grammar pages)
     "corpus_a": None,          # Corpus | None
     "corpus_b": None,          # Corpus | None
     "candidates": [],          # list[CandidatePair]
     "correspondences": [],     # list[SoundCorrespondence]
     "pass_a_done": False,
     "pass_b_done": False,
+    "gloss_tag_mappings": [],
+
+    # Multi-language
+    "corpora": [],             # list[Corpus]  — all loaded languages
+    "pair_results": {},        # dict[(int,int), (correspondences, candidates)]
+    "lang_count": 2,           # number of language panels shown in Load Corpora
 }
 
 

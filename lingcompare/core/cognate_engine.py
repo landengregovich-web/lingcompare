@@ -262,3 +262,25 @@ def run_pass_b(
         )
 
     return correspondences, candidates
+
+
+# ---------------------------------------------------------------------------
+# Multi-language — run all pairs
+# ---------------------------------------------------------------------------
+
+def run_all_pairs(
+    corpora: list[Corpus],
+) -> dict[tuple[int, int], tuple[list[SoundCorrespondence], list[CandidatePair]]]:
+    """Run Pass A + Pass B for every unique (i, j) pair in *corpora*.
+
+    Returns a dict keyed by (i, j) with i < j, mapping to
+    (correspondences, candidates) exactly as run_pass_b returns them.
+    """
+    results: dict[tuple[int, int], tuple[list, list]] = {}
+    n = len(corpora)
+    for i in range(n):
+        for j in range(i + 1, n):
+            cands = run_pass_a(corpora[i], corpora[j])
+            corrs, cands = run_pass_b(cands)
+            results[(i, j)] = (corrs, cands)
+    return results
