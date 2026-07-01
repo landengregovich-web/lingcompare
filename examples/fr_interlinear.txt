@@ -1,0 +1,59 @@
+IPA:   lə ʃa manʒ
+GLOSS: the cat eat.3SG
+TRANS: The cat eats
+
+IPA:   le ʃa manʒ
+GLOSS: the cat eat.3PL
+TRANS: The cats eat
+
+IPA:   la fam vwa lə ʃjɛn
+GLOSS: the woman see.3SG the dog
+TRANS: The woman sees the dog
+
+IPA:   l-anfan bwa lɛ
+GLOSS: the-child drink.3SG milk
+TRANS: The child drinks milk
+
+IPA:   lez-anfan bwav lo
+GLOSS: the-child.PL drink.3PL water
+TRANS: The children drink water
+
+IPA:   ʒə manʒ pɛn
+GLOSS: 1SG eat.1SG bread
+TRANS: I eat bread
+
+IPA:   le mɛn son ɡʁand
+GLOSS: the hand.PL be.3PL big.PL
+TRANS: The hands are big
+
+IPA:   le wazo vɔl
+GLOSS: the bird.PL fly.3PL
+TRANS: The birds fly
+
+IPA:   lə sɔlɛj ɛ ɡʁan
+GLOSS: the sun be.3SG big
+TRANS: The sun is big
+
+IPA:   ʒə vwa la lyn
+GLOSS: 1SG see.1SG the moon
+TRANS: I see the moon
+
+IPA:   l-anfan manʒ ɛn pwason
+GLOSS: the-child eat.3SG a fish
+TRANS: The child eats a fish
+
+IPA:   la fam a dø mɛn
+GLOSS: the woman have.3SG two hand.PL
+TRANS: The woman has two hands
+
+IPA:   lez-ɔm vwa lez-etwal
+GLOSS: the-man.PL see.3PL the-star.PL
+TRANS: The men see the stars
+
+IPA:   ʒe dø jø
+GLOSS: have.1SG two eye.PL
+TRANS: I have two eyes
+
+IPA:   lə ʃjɛn ɛ vjø
+GLOSS: the dog be.3SG old
+TRANS: The dog is old

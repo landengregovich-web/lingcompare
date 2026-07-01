@@ -1,12 +1,12 @@
-# LingCompare Example Corpus — Spanish & Portuguese
+# LingCompare Example Corpus — Spanish, Portuguese & French
 
 This folder contains a ready-to-use example corpus for exploring LingCompare before
 applying it to your own data.
 
-**Languages:** Castilian Spanish and European Portuguese — two closely related Romance
-languages descended from Latin, with well-documented systematic sound correspondences.
-They are close enough to produce many candidates, and different enough that the
-correspondences are informative rather than trivial.
+**Languages:** Castilian Spanish, European Portuguese, and French — three closely
+related Romance languages descended from Latin. They share a large common vocabulary
+but have diverged enough to produce informative sound correspondences. Using all three
+together is the recommended way to try out the **Mass Compare** feature.
 
 ---
 
@@ -16,116 +16,109 @@ correspondences are informative rather than trivial.
 |---|---|---|
 | `es_wordlist.csv` | Wordlist CSV | 52 Spanish words, IPA-transcribed |
 | `pt_wordlist.csv` | Wordlist CSV | 52 Portuguese words, IPA-transcribed |
+| `fr_wordlist.csv` | Wordlist CSV | 54 French words, IPA-transcribed |
 | `es_interlinear.txt` | Interlinear glossed text | 15 Spanish utterances with morpheme breakdowns |
 | `pt_interlinear.txt` | Interlinear glossed text | 15 Portuguese utterances with morpheme breakdowns |
+| `fr_interlinear.txt` | Interlinear glossed text | 15 French utterances with morpheme breakdowns |
 
 IPA transcriptions are broad phonemic representations; narrow phonetic detail and
-allophony are not systematically encoded. The goal is a clear, instructive demo, not
-an exhaustive phonological description.
+allophony are not systematically encoded.
+
+---
+
+## Quick start — Mass Compare (all three languages)
+
+1. Open the **Load Corpora** page.
+2. Under **Language 1**, upload `es_wordlist.csv` and `es_interlinear.txt`. Name it `Spanish`.
+3. Click **＋ Add another language**.
+4. Under **Language 2**, upload `pt_wordlist.csv` and `pt_interlinear.txt`. Name it `Portuguese`.
+5. Click **＋ Add another language**.
+6. Under **Language 3**, upload `fr_wordlist.csv` and `fr_interlinear.txt`. Name it `French`.
+7. Click **Analyse all pairs**.
+8. Go to **Mass Compare** — you will see a 3×3 similarity matrix and the full concept table.
 
 ---
 
 ## What to expect
 
-### Lexicon / Cognates page
+### Mass Compare page
 
-The tool will propose **54 candidate pairs**. A few things to look for:
+The similarity matrix should show Spanish–Portuguese as the most similar pair (~75–80%),
+with French somewhat more distant from both (~55–65%). This reflects actual genetic
+distance — Spanish and Portuguese diverged later and more locally than they each did
+from French.
 
-**Obvious cognates (accept these to seed the feedback loop):**
-- `dia/dia`, `sol/sol`, `floɾ/floɾ`, `boka/boka`, `komeɾ/komeɾ` — near-identical forms
-- `kaβeθa/kaβesa` — head; same consonant frame, θ~s correspondence
-- `pelo/pelu`, `ɡato/ɡatu`, `naɾis/naɾis` — only final vowel quality differs
+In the concept table, filter to concepts present in all 3 languages and look for:
 
-**Informative correspondences to discover:**
+| Concept | Spanish | Portuguese | French | Pattern |
+|---|---|---|---|---|
+| night | notʃe | nojte | nwi | tʃ ~ jt ~ ∅ (Latin -CT-) |
+| eight | otʃo | ojtu | wit | tʃ ~ jt ~ t |
+| milk | letʃe | lejte | lɛ | tʃ ~ jt ~ ∅ |
+| fire | fweɣo | foɡu | fø | Latin FOCUS |
+| son | ixo | fiʎu | fis | Latin FILIUS |
+| ear | oɾexa | oɾeʎa | ɔʁɛj | Latin AURICULA |
+| water | aɣwa | aɡwa | o | Latin AQUA |
+
+### Pairwise — Spanish vs Portuguese
+
+~54 candidate pairs. The most informative correspondences:
 
 | Spanish | Portuguese | Gloss | Correspondence |
 |---|---|---|---|
 | /notʃe/ | /nojte/ | night | tʃ ~ jt (Latin -CT-) |
-| /otʃo/ | /ojtu/ | eight | tʃ ~ jt |
-| /letʃe/ | /lejte/ | milk | tʃ ~ jt |
-| /petʃo/ | /pejtu/ | chest | tʃ ~ jt |
-| /oxo/ | /oʎu/ | eye | x ~ ʎ (Latin -LI-, -C'L-) |
-| /oɾexa/ | /oɾeʎa/ | ear | x ~ ʎ |
-| /ixo/ | /fiʎu/ | son | x ~ ʎ + initial f ~ ∅ |
-| /muxeɾ/ | /muʎeɾ/ | woman | x ~ ʎ |
+| /oxo/ | /oʎu/ | eye | x ~ ʎ (Latin -C'L-) |
 | /aɣwa/ | /aɡwa/ | water | ɣ ~ ɡ (intervocalic weakening) |
-| /neɣɾo/ | /neɡɾu/ | black | ɣ ~ ɡ |
+| /ixo/ | /fiʎu/ | son | x ~ ʎ + f ~ ∅ |
 
-**Deliberate non-cognate pair:**
-- `peɾo/kaw` (dog) — Spanish *perro* and Portuguese *cão* come from different Latin
-  roots. The tool may not even propose this pair (the forms are too different), but if
-  it does appear, it is a good example to reject.
+### Pairwise — Spanish vs French / Portuguese vs French
 
-**Recommended workflow:**
+French has undergone more extensive sound changes from Latin than Iberian Romance,
+so correspondences are less regular but still detectable:
 
-1. Accept the obvious identical/near-identical cognates first (~15 pairs).
-2. Watch the systematicity scores update on the remaining candidates.
-3. The pairs with `tʃ ~ jt` correspondence (night, eight, milk, chest) should now
-   score higher — accept them.
-4. The `x ~ ʎ` pairs (eye, ear, son, woman) should rise next — accept them.
-5. Check the **systematic correspondences panel** at the bottom of the page; it
-   summarises the patterns you have confirmed so far.
+- Latin F: ES /fweɣo/, PT /foɡu/, FR /fø/ — initial f preserved, vowel very different
+- Latin -CT-: ES /tʃ/, PT /jt/, FR silent (e.g. *nuit* < NOCTEM — the /kt/ disappeared entirely)
+- Definite article: ES *el/la*, PT *o/a*, FR *le/la* — all from Latin ILLE/ILLA
 
 ### Phonology page
 
-Expected findings:
-- Large shared inventory (~20 phonemes including all vowels and most consonants)
-- Spanish-only: /θ/ (inter-dental fricative in Castilian *c/z*)
-- Portuguese-only: /ʀ/ (uvular rhotic), /ʒ/, /ʃ/ as phonemes
-- Both have /ʎ/, /ɲ/, /β/, /ð/, /ɣ/, /ɾ/
+Spanish–Portuguese:
+- Shared: most consonants, five-vowel core
+- ES only: /θ/ (Castilian *c/z*)
+- PT only: /ʀ/, /ʒ/, /ʃ/ as phonemes
+
+Spanish–French / Portuguese–French:
+- French has more front rounded vowels: /y/, /ø/, /œ/
+- French has uvular /ʁ/ vs Iberian /r/, /ɾ/
+- French has /ʒ/ and /ʃ/ as prominent phonemes
 
 ### Grammar page
 
-Load the interlinear files on the **Load Corpora** page (paste or upload) to populate
-the Grammar page. Both texts use these morpheme tags:
+Load the interlinear files to populate the Grammar page. The three texts share these
+morpheme tags:
 
-| Tag | Meaning | Example |
-|---|---|---|
-| `PL` | plural | `ɡato-s / cat-PL` |
-| `3PL` | 3rd person plural agreement | `kome-n / eat-3PL` |
-| `1SG` | 1st person singular agreement | `ew komu paw / 1SG eat.1SG bread` |
-| `3SG` | fused 3rd singular | `eat.3SG` |
+| Tag | Meaning | ES example | PT example | FR example |
+|---|---|---|---|---|
+| `PL` | plural | `ɡato-s / cat-PL` | `ɡatu-s / cat-PL` | (zero marking) |
+| `3PL` | 3rd pl. agreement | `kome-n / eat-3PL` | `kome-m / eat-3PL` | `manʒ / eat.3PL` |
+| `1SG` | 1st sg. | `ʝo / 1SG` | `ew / 1SG` | `ʒə / 1SG` |
+| `3SG` | fused 3rd sg. | `kome / eat.3SG` | `kome / eat.3SG` | `manʒ / eat.3SG` |
 
-The tool will propose `PL ~ PL` (identity), `3PL ~ 3PL` (identity), and `1SG ~ 1SG`
-(identity) as confirmed correspondences. Morpheme alignment shows the plural suffix
-/-s/ is shared, while verb endings differ slightly (ES `-n` ~ PT `-m` for 3PL).
-
----
-
-## Loading the corpus
-
-### Lexical analysis only (fastest start)
-
-1. Open the **Load Corpora** page.
-2. Under **Corpus A**, expand **Wordlist CSV**, upload `es_wordlist.csv` or paste its
-   contents.  Enter `Spanish` as the language name.
-3. Under **Corpus B**, expand **Wordlist CSV**, upload `pt_wordlist.csv`.
-   Enter `Portuguese`.
-4. Click **Run Analysis**.
-
-### Adding grammar analysis
-
-On the same page, under each corpus, expand **Interlinear glossed text** and
-upload or paste the corresponding interlinear file (`es_interlinear.txt` /
-`pt_interlinear.txt`).  The wordlist and interlinear data are merged automatically —
-you get the full 52-word lexical comparison *and* morpheme-level grammar analysis
-from the interlinear texts at the same time.
-
-**Note:** do not paste the interlinear file into the Wordlist CSV section — they use
-different formats and the parser will report errors.
+French note: French spoken plurals are usually not phonemically marked on nouns
+(`chat` and `chats` are both /ʃa/). The interlinear uses `hand.PL`, `bird.PL` etc.
+to indicate grammatical plurality even when the noun form is unchanged. Verb 3SG and
+3PL are also identical in many French verbs (e.g. *mange/mangent* both = /manʒ/).
+The article alternation (`le/la` → `les`, `le` → `l-` before vowels) is the main
+phonemic marker of plurality.
 
 ---
 
 ## IPA notes
 
-The transcriptions use standard IPA symbols supported by PanPhon 0.20+:
-
-- Spanish intervocalic stops are transcribed as fricatives/approximants: /b/→/β/,
-  /d/→/ð/, /g/→/ɣ/ (this reflects common phonological description of Castilian).
-- Portuguese /g/ is transcribed as /ɡ/ (U+0261, the IPA script-g, *not* regular
-  ASCII `g` which PanPhon does not recognise).
-- Nasal vowels and diphthongs are simplified to avoid PanPhon's limited coverage of
-  pre-nasalised or combined diacritic segments.
-- /r/ (Spanish trill, initial position) and /ɾ/ (tap, medial) are distinguished.
-  Portuguese initial /r/ is transcribed as /ʀ/ (uvular) in words where it is shown
-  as such (e.g. `ʀoʃu` "red").
+- Spanish intervocalic stops are transcribed as approximants: /b/→/β/, /d/→/ð/, /g/→/ɣ/.
+- All three languages use /ɡ/ (U+0261, IPA script-g, **not** ASCII `g`).
+- French nasal vowels (/ɑ̃/, /ɔ̃/, /ɛ̃/) are written as vowel+nasal sequences (/an/, /on/, /ɛn/)
+  to avoid combining diacritics that PanPhon does not handle.
+- French /ʁ/ (uvular fricative) is used throughout; this is distinct from Spanish /r/ (trill)
+  and /ɾ/ (tap) and Portuguese /ʀ/ (uvular trill).
+- French /ø/, /œ/, /y/ are front rounded vowels; PanPhon fully supports them.
